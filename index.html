@@ -1,0 +1,58 @@
+<head>
+	<meta charset='utf-8'>
+	<style>
+		div {
+			white-space: pre;
+		}
+	</style>
+	<!--
+	<script src="/usr/share/mathjax/tex-chtml.js" id="MathJax-script" async></script>
+	--!>
+	<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" async></script>
+</head>
+<body> 
+\( 
+	\newcommand\d{\displaystyle}
+	\newcommand\plop[2]{\overset{#1}\_#2}
+\)
+	<div>
+
+Założenia
+	
+Moc różnicy zbiorów:
+	\(\d |A \cap B'| = |A \setminus B| = |A| - |A \cap B| \)
+		Dowód:
+		\(\d A = (A \cap B) \cup (A \cap B')  \)
+		\(\d |A| = |(A \cap B) \cup (A \cap B')| \)
+		\(\d |A| = |A \cap B| + |A \cap B'| - |(A \cap B) \cap (A \cap B')| \)
+		\(\d |A| = |A \cap B| + |A \cap B'| - |\varnothing| \)
+		\(\d |A \cap B'| = |A| - |A \cap B'| \)
+ilość permutacji \( n \)-elementowego zbioru:
+	\(\d n! \)
+ilość \( k \)-permutacji \(n\)-zbioru:
+	\(\d \frac{n!}{(n-k)!} \)
+	\(\d \plop{44}{55} \)
+	#pprint n-trees
+
+Reszta z dzielenia liczby naturalnej podniesionej do naturalnej potęgi
+	Szukane:
+		\(\d x = a^b\bmod c \qquad  a, b, c \in \mathbb{N}\)
+	Rozwiązanie:
+		\(\d a^b = (nc + x)^b \qquad n \in \mathbb{N} \)
+		\(\d a^b = \sum \limits_{k=0}^b \binom{b}{k}(nc)^{k}x^{b-k} \)        dwumian newtona
+		\(\d a^b = \binom{b}{0}(nc)^{0}x^{b-0} + \sum \limits_{k=1}^b \binom{b}{k}(nc)^{k}x^{b-k} \)        rozbicie sumy
+		\(\d a^b = x^b + S \qquad S = \sum \limits_{k=1}^b \binom{b}{k}(nc)^{k}x^{b-k} \)
+		\(\d a^b = x^b + S \) #który styl lepszy i dlaczego?
+		#jak ładnie wykazać, że \(\d S | c \)
+			#każdy wyraz sumy jest podzielny przez c, więc suma też
+		#dodawanie modulo
+			#jak przejść od definicji do wyprowadzenia tożsamości?
+		#trywializmy (np. sprawdzanie domeny operacji arytmetycznych)
+
+\(\d s_1 = ababa \quad \text{where} \quad a \in A, b \in B \)
+	#jednoznaczne alfabety
+
+
+\(\d \overrightarrow{AB} = \widehat{AB} \cdot  \overline{AB} \)
+	</div>
+</body>
